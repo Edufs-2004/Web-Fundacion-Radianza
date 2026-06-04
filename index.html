@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación Radianza | Interés General y Beneficencia Pública</title>
+  
+  <!-- Icono de pestaña (Logo de la Fundación actualizado a logo.png) -->
+  <link rel="icon" type="image/png" href="logo.png"> 
+  
+  <!-- Framework de Utilidades CSS (Tailwind) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Vinculación al archivo de estilos externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+
+  <!-- Navegación -->
+  <nav class="navbar">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <!-- Se aumentó la altura del menú a h-24 para dar más espacio al logo -->
+      <div class="flex justify-between items-center h-24">
+        <div class="flex items-center space-x-4">
+          <!-- Logo de la Fundación más grande (h-16 a h-20 en pantallas grandes) -->
+          <img src="logo.png" alt="Logo Fundación Radianza" class="h-16 md:h-20 w-auto object-contain">
+          <span class="font-bold text-xl md:text-2xl tracking-wide text-[var(--blue-deep)]" style="font-family: var(--font-title);">Fundación Radianza</span>
+        </div>
+        
+        <!-- Menú de navegación tradicional -->
+        <div class="hidden md:flex space-x-8 items-center">
+          <a href="#nosotros" class="text-sm font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] transition-colors">Nosotros</a>
+          <a href="#fines" class="text-sm font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] transition-colors">Nuestros Fines</a>
+          <a href="#contacto" class="btn-outline-gold px-5 py-2 rounded-full text-sm">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section (Sección de Bienvenida con degradado azul-celeste) -->
+  <header class="hero-section pt-40 pb-24 lg:pt-48 lg:pb-36 flex flex-col items-center text-center px-6">
+    <div class="max-w-4xl z-10">
+      <h1 class="hero-title text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+        Iluminando el camino hacia el <span class="text-gold">desarrollo integral</span>
+      </h1>
+      <p class="hero-subtitle text-lg lg:text-xl mb-10 max-w-2xl mx-auto font-light">
+        Una institución de Derecho Privado sin fines de lucro enfocada firmemente en la promoción del interés general y la asistencia social.
+      </p>
+      <div class="flex justify-center">
+        <a href="#fines" class="btn-primary px-8 py-3 rounded-full shadow-md text-sm tracking-wide uppercase">
+          Conoce nuestra labor
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Nosotros (Historia e Inspiración) -->
+  <section id="nosotros" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <span class="text-xs font-bold tracking-widest text-[var(--gold-accent)] uppercase block mb-2">Nuestra Identidad</span>
+        <h2 class="text-3xl lg:text-4xl font-bold mb-6">Orígenes y Esencia</h2>
+        <p class="text-[var(--text-muted)] mb-6 text-sm lg:text-base leading-relaxed">
+          Constituida bajo la sentida visión de su fundadora y presidenta, la florista chilena <strong>doña Ingrid Rosario Zegers Hernández</strong>, la Fundación nace con un profundo arraigo en el cuidado y el florecimiento social de las comunidades. Inspirada en la resiliencia de la naturaleza, busca sembrar bases sólidas para el porvenir.
+        </p>
+        <p class="text-[var(--text-muted)] text-sm lg:text-base leading-relaxed">
+          Establecida legalmente en la tranquila comuna de <strong>Pirque, Región Metropolitana</strong>, la institución proyecta sus programas de beneficencia con un alcance transversal, asegurando que el apoyo llegue directamente a los sectores más vulnerables de la sociedad.
+        </p>
+      </div>
+      
+      <!-- Contenedor del logo modificado para dejarlo libre y sin recortes -->
+      <div class="flex justify-center items-center">
+        <img src="logo.png" alt="Emblema Radianza" class="w-full max-w-md h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Fines -->
+  <section id="fines" class="py-24 bg-[var(--white-pure)] border-y border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold tracking-widest text-[var(--gold-accent)] uppercase block mb-2">Líneas de Acción</span>
+        <h2 class="text-3xl lg:text-4xl font-bold text-[var(--blue-deep)]">Objetivos Estatutarios</h2>
+        <p class="text-[var(--text-muted)] max-w-2xl mx-auto mt-4 text-sm lg:text-base">
+          Nuestras actividades se dirigen de manera estricta y excluyente a la consolidación de fines de interés general.
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Fin 1 -->
+        <div class="card-container p-8">
+          <div class="card-icon-box w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-xl">
+            🏛️
+          </div>
+          <h3 class="text-lg font-bold mb-3">Interés General</h3>
+          <p class="text-sm text-[var(--text-muted)] leading-relaxed">
+            Desarrollo e implementación de proyectos sociales, culturales y comunitarios que beneficien de forma colectiva y directa a los ciudadanos.
+          </p>
+        </div>
+        
+        <!-- Fin 2 -->
+        <div class="card-container p-8">
+          <div class="card-icon-box w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-xl">
+            🤝
+          </div>
+          <h3 class="text-lg font-bold mb-3">Beneficencia Pública</h3>
+          <p class="text-sm text-[var(--text-muted)] leading-relaxed">
+            Asistencia solidaria y directa dirigida a sectores en situación de vulnerabilidad social, proveyendo herramientas indispensables para su desarrollo.
+          </p>
+        </div>
+        
+        <!-- Fin 3 -->
+        <div class="card-container p-8">
+          <div class="card-icon-box w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-xl">
+            🌱
+          </div>
+          <h3 class="text-lg font-bold mb-3">Desarrollo Sostenible</h3>
+          <p class="text-sm text-[var(--text-muted)] leading-relaxed">
+            Iniciativas integrales inspiradas en la naturaleza que impulsan la educación técnica, el microemprendimiento y el bienestar integral de familias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto (Botón de WhatsApp Temporalmente Inactivo) -->
+  <section id="contacto" class="py-24 px-6 lg:px-12 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl lg:text-4xl font-bold mb-6">Canal de Comunicación</h2>
+    <p class="text-[var(--text-muted)] mb-10 text-sm lg:text-base max-w-2xl mx-auto">
+      Nos encontramos en pleno proceso de constitución legal e inscripción de nuestra personalidad jurídica. Si requieres más antecedentes sobre nuestros estatutos, las vías de contacto oficiales se habilitarán prontamente.
+    </p>
+    
+    <!-- Botón con estado inactivo nativo y estilos CSS dedicados -->
+    <button disabled class="btn-wsp-inactive inline-flex items-center space-x-3 px-8 py-3 rounded-full font-medium text-sm transition-all shadow-sm">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      <span class="tracking-wide text-xs uppercase font-semibold">Módulo de contacto inactivo</span>
+    </button>
+  </section>
+
+  <!-- Pie de Página (Footer) -->
+  <footer class="footer-site py-12 text-center text-sm">
+    <p class="mb-2 font-medium" style="font-family: var(--font-title); color: var(--white-pure);">
+      &copy; 2026 Fundación Radianza. Todos los derechos reservados.
+    </p>
+    <p class="text-xs opacity-60">
+      Pirque, Región Metropolitana, Chile.
+    </p>
+  </footer>
+
+</body>
+</html>

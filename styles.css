@@ -1,0 +1,136 @@
+/* Importación de tipografías elegantes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+  /* ==== PALETA DE COLORES INSTITUCIONAL ==== */
+  --blue-deep: #0A2540;       /* Azul corporativo profundo */
+  --celeste-fade: #7AC1EB;    /* Celeste claro para degradados y transiciones */
+  --gold-accent: #D4AF37;     /* Dorado metálico para detalles importantes */
+  --gold-light: #F3E5AB;      /* Variación clara de dorado para fondos suaves */
+  --white-pure: #FFFFFF;      /* Blanco puro */
+  --bg-light: #F8FAFC;        /* Fondo claro general */
+  --text-dark: #1E293B;       /* Texto principal */
+  --text-muted: #64748B;      /* Texto secundario/párrafos */
+  
+  /* Fuentes basadas en la estética del logo */
+  --font-title: 'Cinzel', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+  color: var(--blue-deep);
+}
+
+/* Navegación */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  background-color: var(--white-pure);
+  border-b: 1px solid rgba(10, 37, 64, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Héroe con degradado de Azul a Celeste */
+.hero-section {
+  background: linear-gradient(135deg, var(--blue-deep) 0%, #1A446C 50%, var(--celeste-fade) 100%);
+  color: var(--white-pure);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  color: var(--white-pure);
+}
+
+.hero-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Detalles y acentos en Dorado */
+.text-gold {
+  color: var(--gold-accent);
+}
+
+.border-gold {
+  border-color: var(--gold-accent);
+}
+
+/* Botones principales */
+.btn-primary {
+  background-color: var(--gold-accent);
+  color: var(--blue-deep);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--white-pure);
+  color: var(--blue-deep);
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+.btn-outline-gold {
+  border: 2px solid var(--gold-accent);
+  color: var(--gold-accent);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--gold-accent);
+  color: var(--blue-deep);
+}
+
+/* Estructura de Tarjetas (Cards) */
+.card-container {
+  background-color: var(--white-pure);
+  border-top: 4px solid var(--blue-deep);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  border-top-color: var(--gold-accent);
+}
+
+.card-icon-box {
+  background-color: rgba(122, 193, 235, 0.15);
+  color: var(--blue-deep);
+  border: 1px solid rgba(10, 37, 64, 0.1);
+}
+
+/* Estado inactivo del botón de WhatsApp */
+.btn-wsp-inactive {
+  background-color: #E2E8F0;
+  color: #94A3B8;
+  cursor: not-allowed;
+  border: 1px solid #CBD5E1;
+}
+
+/* Footer */
+.footer-site {
+  background-color: var(--blue-deep);
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 3px solid var(--gold-accent);
+}
