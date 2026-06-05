@@ -3,30 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fundación Radianza | Interés General y Beneficencia Pública</title>
-  
+  <title>Fundación Radianza | Inicio</title>
   <link rel="icon" type="image/png" href="logo.png"> 
-  
   <script src="https://cdn.tailwindcss.com"></script>
-  
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Estilos para la animación de scroll de la nueva frase -->
+  <style>
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-out;
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
 <body class="antialiased relative">
 
+  <!-- Navegación -->
   <nav class="navbar transition-all duration-300">
     <div class="max-w-7xl mx-auto px-5 lg:px-12">
       <div class="flex justify-between items-center h-20 md:h-24 relative">
-        
         <div class="w-8 md:hidden"></div>
-
         <div class="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 flex items-center space-x-2 md:space-x-4">
           <img src="logo.png" alt="Logo Fundación Radianza" class="h-16 sm:h-20 md:h-24 w-auto object-contain">
-          <span class="hidden md:block font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-[var(--blue-deep)]" style="font-family: var(--font-title);">Impulsando vidas, creando oportunidades</span>
+          <span class="hidden md:block font-bold text-lg sm:text-xl md:text-2xl tracking-wide text-[var(--blue-deep)]" style="font-family: var(--font-title);">La calidez de acompañar, la fuerza de transformar</span>
         </div>
         
         <div class="hidden md:flex space-x-8 items-center">
-          <a href="#nosotros" class="text-sm font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] transition-colors">Nosotros</a>
-          <a href="#fines" class="text-sm font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] transition-colors">Nuestros Fines</a>
+          <a href="#nosotros" class="text-sm font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] transition-colors">Orígenes</a>
+          <a href="quienes-somos.html" class="text-sm font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] transition-colors">Quiénes Somos</a>
           <a href="#contacto" class="btn-outline-gold px-5 py-2 rounded-full text-sm">Contacto</a>
         </div>
 
@@ -40,10 +49,11 @@
       </div>
     </div>
 
+    <!-- Menú Móvil -->
     <div id="mobile-menu" class="hidden md:hidden bg-[var(--white-pure)] border-t border-gray-100 shadow-xl absolute w-full left-0 z-40">
       <div class="px-6 pt-4 pb-6 space-y-4 flex flex-col text-center">
-        <a href="#nosotros" class="mobile-link text-base font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] py-2">Nosotros</a>
-        <a href="#fines" class="mobile-link text-base font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] py-2">Nuestros Fines</a>
+        <a href="#nosotros" class="mobile-link text-base font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] py-2">Orígenes</a>
+        <a href="quienes-somos.html" class="mobile-link text-base font-medium text-[var(--text-dark)] hover:text-[var(--gold-accent)] py-2">Quiénes Somos</a>
         <div class="pt-2">
           <a href="#contacto" class="mobile-link btn-outline-gold px-6 py-2 rounded-full text-sm inline-block">Contacto</a>
         </div>
@@ -51,27 +61,29 @@
     </div>
   </nav>
 
+  <!-- Hero Section -->
   <header class="hero-section pt-32 pb-16 md:pt-48 md:pb-36 flex flex-col items-center text-center px-6">
     <div class="max-w-4xl z-10 mt-8 md:mt-0">
       <h1 class="hero-title text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight">
-        Iluminando el camino hacia el <span class="text-gold block sm:inline mt-2 sm:mt-0">desarrollo integral</span>
+        Impulsando vidas, <span class="text-gold block sm:inline mt-2 sm:mt-0">creando oportunidades</span>
       </h1>
       <p class="hero-subtitle text-base sm:text-lg lg:text-xl mb-8 md:mb-10 max-w-2xl mx-auto font-light">
         Una institución de Derecho Privado sin fines de lucro enfocada firmemente en la promoción del bienestar, la dignidad y las oportunidades.
       </p>
       <div class="flex justify-center">
-        <a href="#fines" class="btn-primary px-6 md:px-8 py-3 rounded-full shadow-md text-xs md:text-sm tracking-wide uppercase">
+        <a href="quienes-somos.html" class="btn-primary px-6 md:px-8 py-3 rounded-full shadow-md text-xs md:text-sm tracking-wide uppercase">
           Conoce nuestra labor
         </a>
       </div>
     </div>
   </header>
 
+  <!-- Sección Nosotros -->
   <section id="nosotros" class="py-16 md:py-24 px-6 lg:px-12 max-w-7xl mx-auto text-center md:text-left">
     <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
       <div class="order-2 lg:order-1">
         <span class="text-xs font-bold tracking-widest text-[var(--gold-accent)] uppercase block mb-2">Nuestra Identidad</span>
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Orígenes y Esencia</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-[var(--blue-deep)]">Orígenes y Esencia</h2>
         <p class="text-[var(--text-muted)] mb-4 md:mb-6 text-sm lg:text-base leading-relaxed">
           Bajo la sentida visión de su fundadora y presidenta, la florista chilena <strong>doña Ingrid Rosario Zegers Hernández</strong>, la Fundación nace con un profundo arraigo en el cuidado y el florecimiento social de las comunidades. Inspirada en la resiliencia de la naturaleza, busca sembrar bases sólidas para el porvenir.
         </p>
@@ -79,67 +91,38 @@
           Constituida en la comuna de <strong>Pirque, Región Metropolitana</strong>, proyectamos nuestros programas de beneficencia con un alcance transversal, asegurando que el apoyo llegue directamente a los sectores más vulnerables de la sociedad.
         </p>
       </div>
-      
       <div class="order-1 lg:order-2 flex justify-center items-center">
         <img src="logo.png" alt="Emblema Radianza" class="w-3/4 sm:w-2/3 md:w-full max-w-xs md:max-w-md h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500">
       </div>
     </div>
   </section>
 
-  <section id="fines" class="py-16 md:py-24 bg-[var(--white-pure)] border-y border-gray-100 px-6 lg:px-12">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-12 md:mb-16">
-        <span class="text-xs font-bold tracking-widest text-[var(--gold-accent)] uppercase block mb-2">Líneas de Acción</span>
-        <h2 class="text-3xl md:text-4xl font-bold text-[var(--blue-deep)]">Objetivos Estatutarios</h2>
-        <p class="text-[var(--text-muted)] max-w-2xl mx-auto mt-3 md:mt-4 text-sm lg:text-base">
-          Nuestras actividades se dirigen de manera estricta y excluyente a la consolidación de fines de interés general.
-        </p>
-      </div>
-      
-      <div class="grid md:grid-cols-3 gap-6 md:gap-8">
-        <div class="card-container p-6 md:p-8 text-center">
-          <div class="card-icon-box w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 text-xl">
-            🏛️
-          </div>
-          <h3 class="text-lg font-bold mb-2 md:mb-3">Interés General</h3>
-          <p class="text-sm text-[var(--text-muted)] leading-relaxed">
-            Desarrollo e implementación de proyectos sociales, culturales y comunitarios que beneficien de forma colectiva y directa a los ciudadanos.
-          </p>
-        </div>
-        
-        <div class="card-container p-6 md:p-8 text-center">
-          <div class="card-icon-box w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 text-xl">
-            🤝
-          </div>
-          <h3 class="text-lg font-bold mb-2 md:mb-3">Beneficencia Pública</h3>
-          <p class="text-sm text-[var(--text-muted)] leading-relaxed">
-            Asistencia solidaria y directa dirigida a sectores en situación de vulnerabilidad social, proveyendo herramientas indispensables para su desarrollo.
-          </p>
-        </div>
-        
-        <div class="card-container p-6 md:p-8 text-center">
-          <div class="card-icon-box w-12 h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center mx-auto mb-4 md:mb-6 text-xl">
-            🌱
-          </div>
-          <h3 class="text-lg font-bold mb-2 md:mb-3">Desarrollo Sostenible</h3>
-          <p class="text-sm text-[var(--text-muted)] leading-relaxed">
-            Iniciativas integrales inspiradas en la naturaleza que impulsan la educación técnica, el microemprendimiento y el bienestar integral de familias.
-          </p>
-        </div>
-      </div>
+  <!-- Frase Dinámica -->
+  <section class="relative py-20 md:py-32 bg-[var(--blue-deep)] overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute w-64 h-64 bg-[var(--gold-accent)] rounded-full blur-[100px] opacity-20 -top-10 -left-10 animate-pulse"></div>
+      <div class="absolute w-80 h-80 bg-[var(--celeste-fade)] rounded-full blur-[100px] opacity-20 bottom-0 right-0 animate-pulse" style="animation-delay: 2s;"></div>
+    </div>
+    
+    <div class="max-w-5xl mx-auto px-6 relative z-10 text-center reveal-on-scroll">
+      <svg class="w-10 h-10 md:w-14 md:h-14 text-[var(--gold-accent)] mx-auto mb-6 md:mb-8 opacity-90" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+      </svg>
+      <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-relaxed md:leading-snug" style="font-family: var(--font-title);">
+        "Nacimos para acompañar a personas y comunidades en momentos de vulnerabilidad, entregando herramientas, apoyo y oportunidades que permitan recuperar esperanza y construir un mejor futuro."
+      </h2>
+      <div class="w-24 h-1 bg-[var(--gold-accent)] mx-auto mt-10 md:mt-12 rounded-full"></div>
     </div>
   </section>
 
-  <section id="contacto" class="py-16 md:py-24 px-6 lg:px-12 max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">Canal de Comunicación</h2>
+  <!-- Sección de Contacto -->
+  <section id="contacto" class="py-16 md:py-24 px-6 lg:px-12 max-w-4xl mx-auto text-center bg-[var(--white-pure)]">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-[var(--blue-deep)]">Canal de Comunicación</h2>
     <p class="text-[var(--text-muted)] mb-8 md:mb-10 text-sm lg:text-base max-w-2xl mx-auto">
      Si requieres más antecedentes sobre nuestros estatutos, las vías de contacto oficiales se habilitarán prontamente.
     </p>
-    
     <button disabled class="btn-wsp-inactive flex items-center justify-center space-x-2 md:space-x-3 px-6 md:px-8 py-3 rounded-full font-medium text-xs md:text-sm transition-all shadow-sm mx-auto w-full sm:w-auto">
-      <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-      </svg>
+      <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
       <span class="tracking-wide uppercase font-semibold">Módulo inactivo</span>
     </button>
   </section>
@@ -148,30 +131,38 @@
     <p class="mb-2 font-medium text-sm md:text-base" style="font-family: var(--font-title); color: var(--white-pure);">
       &copy; 2026 Fundación Radianza. Todos los derechos reservados.
     </p>
-    <p class="text-xs opacity-70">
-      Pirque, Región Metropolitana, Chile.
-    </p>
+    <p class="text-xs opacity-70">Pirque, Región Metropolitana, Chile.</p>
   </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Script del Menú Móvil
       const btn = document.getElementById('mobile-menu-btn');
       const menu = document.getElementById('mobile-menu');
       const links = document.querySelectorAll('.mobile-link');
+      
+      btn.addEventListener('click', () => { menu.classList.toggle('hidden'); });
+      links.forEach(link => { link.addEventListener('click', () => { menu.classList.add('hidden'); }); });
 
-      // Alternar visualización del menú al presionar el botón hamburguesa
-      btn.addEventListener('click', () => {
-        menu.classList.toggle('hidden');
-      });
+      // Script para la animación "Reveal on Scroll" de la nueva frase
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+      };
 
-      // Cerrar el menú automáticamente al hacer clic en cualquier enlace
-      links.forEach(link => {
-        link.addEventListener('click', () => {
-          menu.classList.add('hidden');
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
         });
-      });
+      }, observerOptions);
+
+      const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      revealElements.forEach(el => observer.observe(el));
     });
   </script>
-
 </body>
 </html>
